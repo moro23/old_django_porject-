@@ -1,0 +1,12 @@
+<!--templates/edit_post.html-->
+{% extends 'base.html' %}
+{% block content %}
+    <div class="post-entry">
+        <form action="" method="post">{% csrf_token %}
+            {{form.as_p}}
+            <p><input type="submit" value="Confirm" /></p>
+        </form>
+
+    </div>
+
+{% endblock content %}

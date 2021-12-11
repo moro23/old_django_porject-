@@ -1,0 +1,13 @@
+<!--templates/home.html-->
+{% extends "base.html" %}
+{% block content %}
+
+{% for post in list_all_post%}
+    <div class="post-entry">
+        <h2><a href="{% url 'detail_page' post.pk %}"> {{post.id}}. {{post.title}}</a></h2>    
+        <p>{{post.body}}</p>
+    </div>
+
+{% endfor %}
+
+{% endblock content %}

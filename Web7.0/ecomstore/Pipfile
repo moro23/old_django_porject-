@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+pillow = "*"
+psycopg2-binary = "*"
+celery = "==4.4.2"
+braintree = "==3.59.0"
+django-allauth = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

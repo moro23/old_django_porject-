@@ -1,0 +1,10 @@
+<!--templates/article_comment.html-->
+{% extends 'base.html' %}
+
+{% block title %}Add Comment {% endblock title%}
+
+{% block content %}
+
+{% render_comment_form for article %}
+
+{% endblock %}

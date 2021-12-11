@@ -1,0 +1,15 @@
+<!--templates/registration/login.html-->
+{% extends 'base.html' %}
+{% block content %}
+    <div class="post-entry">
+        <h2>Log In</h2>
+        <form method="post">{% csrf_token %}
+            {{form.as_p}}
+            <p>
+                <button type="submit">Log In</button>
+            </p>
+        </form>
+    </div>
+
+
+{% endblock content %}

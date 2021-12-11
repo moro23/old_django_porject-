@@ -1,0 +1,11 @@
+<!--templates/add_post.html-->
+{% extends 'base.html' %}
+{% block content%}
+    <div class="post-entry">
+        <form method="post" action="">{% csrf_token%}
+            {{form.as_p}}
+            <input type="submit" value="Add">
+        </form>
+    </div>
+
+{% endblock content %}
